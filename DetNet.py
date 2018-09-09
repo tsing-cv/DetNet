@@ -1,8 +1,9 @@
-# -*- coding: utf-8 -*-
 ###################################################
 # tsing
 # 2018-09-01
 ###################################################
+
+# -*- coding: utf-8 -*-
 import collections # 原生的collections库
 import tensorflow as tf
 slim = tf.contrib.slim 
