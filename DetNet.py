@@ -169,7 +169,7 @@ def detnet(inputs,
            scope=None): 
     with tf.variable_scope(scope, 'detnet', [inputs], reuse=reuse) as sc:
         end_points_collection = sc.original_name_scope + '_end_points' 
-        with slim.arg_scope([slim.conv2d, bottleneck, stack_blocks_dense],
+        with slim.arg_scope([slim.conv2d, bottleneck, bottleneck_detnet, stack_blocks_dense],
                             outputs_collections=end_points_collection): 
             net = inputs
             if include_root_block: 
